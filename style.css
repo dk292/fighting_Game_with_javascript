@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.main__container {
+  position: relative;
+  display: inline-block;
+}
+
+.sub__container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+}
+
+.player__health-div,
+.enemy__health-div {
+  width: 100%;
+  position: relative;
+  border: 4px solid #fff;
+}
+
+.enemy__health-div {
+  border-left: none;
+}
+
+.player__health-div {
+  display: flex;
+  justify-content: flex-end;
+  border-right: none;
+}
+
+.health__container {
+  background-color: red;
+  height: 30px;
+  width: 100%;
+}
+
+#enemyHealthBar,
+#playerHealthBar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #818cf8;
+  width: 100%;
+}
+
+#enemyHealthBar {
+  left: 0;
+}
+
+#timer {
+  background-color: black;
+  width: 100px;
+  height: 50px;
+  color: #fff;
+  flex-shrink: 0;
+  border: 4px solid #fff;
+  font-family: "Press Start 2P", "cursive";
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#displayText {
+  position: absolute;
+  color: #fff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
